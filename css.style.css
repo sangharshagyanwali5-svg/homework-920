@@ -1,0 +1,95 @@
+body {
+    background-color: #f4f7f6; /* Ali soft grey background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333;
+}
+
+/* Form Container Box */
+form {
+    background-color: #ffffff;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05); /* Soft premium shadow */
+    text-align: left;
+}
+
+/* Form Paragraph/Spacing */
+form p {
+    margin-bottom: 20px;
+}
+
+/* Labels Formatting */
+label {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #4a5568;
+    font-size: 14px;
+    text-transform: capitalize; /* "prabin magar" lai "Prabin Magar" banaucha visually */
+}
+
+/* Input Fields & Textarea Styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Purai body width line gari milayeko */
+    padding: 12px 16px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #f8fafc;
+    color: #334155;
+    transition: all 0.3s ease; /* Hover effect dynamic banauna */
+    box-sizing: border-box;
+}
+
+/* Textarea width custom sizing */
+textarea {
+    resize: vertical; /* User le height matra tanna milne */
+    min-height: 100px;
+}
+
+/* Input focus style - Jaba click garcha blue border auncha */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+/* Placeholder text color */
+::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+/* Submit Button Style */
+button[type="submit"] {
+    width: 100%; /* Button lai purai space line banayeko */
+    background-color: #3b82f6; /* Modern Blue */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background-color: #2563eb; /* Ali dark blue text */
+}
+
+/* Button active effect - Click garda ali thichiyeko jasto hune */
+button[type="submit"]:active {
+    transform: scale(0.98);
+}
