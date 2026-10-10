@@ -1,0 +1,95 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Card Outer Container */
+.card-container {
+  background-color: #1e1e1e;
+  width: 100%;
+  max-width: 380px;
+  
+  /* Mission 1 Requirements: Border, Padding, and Margin added */
+  border: 2px solid #333;
+  padding: 30px 20px;
+  margin: 20px auto; 
+
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Profile Picture Styling */
+.profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1db954;
+  margin-bottom: 15px;
+}
+
+/* Name Selector (ID) */
+#profile-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1db954; /* Brand accent color */
+  margin-bottom: 5px;
+}
+
+/* Job Title */
+.job-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #b3b3b3;
+  margin-bottom: 15px;
+}
+
+/* Bio Paragraph Selector (Class) */
+.card-info {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #e0e0e0;
+  margin-bottom: 25px;
+}
+
+/* Buttons / Links Section */
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-btn {
+  display: block;
+  background-color: #282828;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  
+  /* Mission Requirement: Button spacing */
+  margin-right: 0; /* Adjusted for column layout, or use if horizontal */
+  
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover Effect for Buttons */
+.card-btn:hover {
+  background-color: #1db954;
+  color: #000000;
+  transform: translateY(-2px);
+}
